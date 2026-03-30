@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+</head>
+<body>
+    <h2>User Data Form</h2>
+
+    <form method="POST">
+            <div>
+            <label>Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <br>
+        <div>
+            <label>Age:</label>
+            <input type="number" name="age" required>
+        </div>
+        <br>
+        <div>
+            <label>Gender:</label>
+
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Total Income:</label>
+            <input type="number" step="0.01" name="total_income" required>
+        </div>
+
+        <h3>Expense Categories</h3>
+
+        <div class="expense-row">
+            <input type="checkbox" name="utilities" value="yes">
+            <label>Utilities</label>
+            <input class="amount-box" type="number" step="0.01" name="utilities_amount">
+        </div>
+
+        <div class="expense-row">
+            <input type="checkbox" name="entertainment" value="yes">
+            <label>Entertainment</label>
+            <input class="amount-box" type="number" step="0.01" name="entertainment_amount">
+        </div>
+
+        <div class="expense-row">
+            <input type="checkbox" name="school_fees" value="yes">
+            <label>School Fees</label>
+            <input class="amount-box" type="number" step="0.01" name="school_fees_amount">
+        </div>
+
+        <div class="expense-row">
+            <input type="checkbox" name="shopping" value="yes">
+            <label>Shopping</label>
+            <input class="amount-box" type="number" step="0.01" name="shopping_amount">
+        </div>
+
+        <div class="expense-row">
+            <input type="checkbox" name="healthcare" value="yes">
+            <label>Healthcare</label>
+            <input class="amount-box" type="number" step="0.01" name="healthcare_amount">
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
